@@ -13,7 +13,7 @@ export async function POST(req) {
   const prompt = await req.json()
 
   const response = await openai.createChatCompletion({
-    model: 'gpt-4',
+    model: 'gpt-3.5-turbo',
     stream: true,
     messages: [
       {
